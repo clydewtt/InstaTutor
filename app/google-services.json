@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "825863212258",
+    "project_id": "instatutor-7b361",
+    "storage_bucket": "instatutor-7b361.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:825863212258:android:6bfd87c2253f077669a2bb",
+        "android_client_info": {
+          "package_name": "com.example.instatutor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "825863212258-p7d48jbok1ptucqn48eri472k9jf8q77.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPFTJ2kKaQoxKdXWAzQf5VG9kQJ-Dlxyo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "825863212258-p7d48jbok1ptucqn48eri472k9jf8q77.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background_gradient"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText, ContentDescription">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_alignParentEnd="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/account_button"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_outline_account_circle_24"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="80dp"
+        android:paddingBottom="100dp"
+        android:orientation="vertical">
+
+<!--        <com.example.instatutor.CircularTextView-->
+<!--            android:id="@+id/circular_textview"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:clickable="true"-->
+<!--            android:foreground="?attr/selectableItemBackgroundBorderless"-->
+<!--            android:focusable="true"-->
+<!--            android:layout_margin="50dp"-->
+<!--            android:text="Find\nTutor"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="48sp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:gravity="center"-->
+<!--            android:padding="60dp"-->
+<!--            android:textColor="@color/white"/>-->
+
+        <com.rolud.solidglowanimation.SolidGlowAnimation
+            android:id="@+id/glow_animation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layers="5"
+            app:color1="#4166EC"
+            app:color2="#5777EE"
+            app:color3="#7791F1"
+            app:color4="#93A8F3"
+            app:color5="#AEBEF5"
+            app:duration="2000"
+            app:scaleMax="1.5"
+            android:radius="120dp">
+
+        <com.example.instatutor.CircularTextView
+            android:id="@+id/circular_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:focusable="true"
+            android:layout_margin="50dp"
+            android:text="Find\nTutor"
+            android:textStyle="bold"
+            android:textSize="48sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="60dp"
+            android:textColor="@color/white"/>
+
+    </com.rolud.solidglowanimation.SolidGlowAnimation>
+
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Welcome User!"
+        android:textSize="18sp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/directional_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click the button above to continue"
+        android:textSize="18sp"
+        android:textColor="@color/white"/>
+
+    </LinearLayout>
+</RelativeLayout>

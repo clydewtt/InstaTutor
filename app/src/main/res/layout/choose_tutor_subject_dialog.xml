@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pick_subject_dialog"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:ignore="ContentDescription, HardcodedText">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick a Subject"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <RelativeLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/subject_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_baseline_chevron_left_24" />
+
+        <TextView
+            android:id="@+id/subject_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:text="Math"/>
+
+        <ImageButton
+            android:id="@+id/subject_next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_baseline_chevron_right_24"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/subject_subtopics_listview"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/done_button_choose_subject"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exit"/>
+
+</LinearLayout>
